@@ -26,12 +26,18 @@ module.exports = {
     mode: process.env.NODE_ENV,
 
     entry: {
-        '__backoffice/app': path.join(SRC_DIR, '__backoffice/index.js'),
-        '__backoffice/vendor': [
+        '__backend/app': path.join(SRC_DIR, '__backend/index.js'),
+        '__backend/vendor': [
             'moment', 'lodash', 'axios',
             'react', 'react-dom', 'react-router-dom',
             'react-md', 'react-md/dist/react-md.blue-deep_orange.min.css'
-        ]
+        ],
+
+        '__frontend/app': path.join(SRC_DIR, '__frontend/index.js'),
+        '__frontend/vendor': [
+            'moment', 'lodash', 'axios',
+            'react', 'react-dom', 'react-router-dom',
+        ],
     },
 
     module: {

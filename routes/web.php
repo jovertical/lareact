@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/su', function () {
-    return view('__backoffice.welcome');
+Route::get('/', function () {
+    return view('__frontend.welcome');
+});
+
+Route::get('/admin', function () {
+    return view('__backend.welcome');
 });
