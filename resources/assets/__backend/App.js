@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Link } from 'react-router-dom';
+
+import Navigator from './core/Navigator';
 
 class App extends Component {
-    render () {
+    render() {
         return (
-            <h1>Welcome to your Backend</h1>
+            <Router>
+                <Navigator />
+            </Router>
         );
     }
 }
