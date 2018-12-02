@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import MasterTemplate from '../templates/MasterTemplate';
 
 class Products extends Component {
     render() {
-        return <h1>Products</h1>;
+        return (
+            <MasterTemplate pageTitle="Products">
+                <h1>Products</h1>
+            </MasterTemplate>
+        );
     }
 }
 

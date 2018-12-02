@@ -18,3 +18,17 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('__backend.welcome');
 });
+
+/*
+    GET /api/admins
+    POST /api/admins
+    PUT /api/admins/{admin}
+    PATCH /api/admins/{admin}
+    DELETE /api/admins/{admin}
+ */
+
+Route::namespace('Api')->prefix('api')->group(function () {
+    Route::resource('admins', 'AdminsController', [
+        'except' => ['create', 'edit']
+    ]);
+});

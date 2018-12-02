@@ -6,8 +6,8 @@
 
 @include react-md-everything;
 @include react-md-theme-everything(
-    $primary-color,
-    $secondary-color,
+    $md-primary-color,
+    $md-secondary-color,
     false,
     'dark-theme'
 );
